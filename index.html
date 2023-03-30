@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- showing questions -->
+    <section id="quizList"></section>
+
+    <!-- submit quiz -->
+    <div id="submit-quiz">
+        <button onclick="result()" class="submitBtn">SUBMIT QUIZ</button>
+    </div>
+
+    <!-- result -->
+    <div id="result"></div>
+
+    <!-- adding question section -->
+    <section id="add-question">
+        <h1>Add Quiz</h1>
+        <form>
+            <div class="input-field">
+                <label for="question">Question:</label>
+                <input type="text" id="question" name="question">
+            </div>
+            <div class="input-field">
+                <label for="option1">Option 1:</label>
+                <input type="text" id="option1" name="option1">
+            </div>
+            <div class="input-field">
+                <label for="option2">Option 2:</label>
+                <input type="text" id="option2" name="option2">
+            </div>
+            <div class="input-field">
+                <label for="option3">Option 3:</label>
+                <input type="text" id="option3" name="option3">
+            </div>
+            <div class="input-field">
+                <label for="option4">Option 4:</label>
+                <input type="text" id="option4" name="option4">
+            </div>
+            <div class="input-field">
+                <label for="answer">Answer:</label>
+                <select id="answer">
+                    <option value="1">option1</option>
+                    <option value="2">option2</option>
+                    <option value="3">option3</option>
+                    <option value="4">option4</option>
+                </select>
+            </div>
+        </form>
+        <input type="button" value="Add Question" onclick="addQuestion()" class="submitBtn">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
