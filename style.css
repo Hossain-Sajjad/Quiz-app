@@ -41,3 +41,7 @@ body {
 #result {
     margin-left: 500px;
 }
+
+.demo-class {
+    color: red;
+}
