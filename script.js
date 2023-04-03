@@ -106,6 +106,7 @@ function result() {
         const answerId = 'correct' + question.id;
         const rightElements = document.getElementsByClassName(answerId);
         for (element of rightElements) {
+            element.parentElement.setAttribute("class", "right-class");
             if (element.checked == false) {
                 flag = 0;
             }
@@ -116,10 +117,14 @@ function result() {
         for (element of wrongElements) {
             if (element.checked == true) {
                 flag = 0;
-                console.log(element)
-                element.parentElement.setAttribute("class", "demo-class");
+                element.parentElement.setAttribute("class", "wrong-class");
             }
         }
+
+        // for (element of rightElements) {
+        //     element.checked = false;
+        //     element.parentElement.removeAttribute("class", "right-class");
+        // }
 
         if (flag == 1) {
             score++;
